@@ -68,4 +68,27 @@ public class BST {
             }
         }
     }
+
+    public void preorder (Node root){
+        if (root == null){
+            return;
+        }
+        System.out.print(root.key + " ");
+        preorder(root.left);
+        preorder(root.right);
+    }
+
+    public void postorder (Node root){
+        if (root == null){
+            return;
+        }
+        postorder(root.left);
+        postorder(root.right);
+        System.out.print(root.key + " ");
+
+    }
+
+    public void delete (int key){
+
+    }
 }
