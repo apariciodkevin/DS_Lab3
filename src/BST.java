@@ -88,12 +88,13 @@ public class BST {
 
     }
 
-    public Node delete (Node root, int key){
-        Node temp = this.root;
+    public void delete(int key){
         Node parent = null;
+        Node temp = this.root;
+
         for (;;){
             if (temp == null){
-                return null;
+                return;
             }
             if (temp.key == key){
                 if (temp.left == null && temp.right == null){
@@ -108,6 +109,5 @@ public class BST {
                 temp = temp.right;
             }
         }
-
     }
 }

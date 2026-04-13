@@ -25,6 +25,7 @@ public class aparicio_lab3 {
         System.out.println("=== Pre order ===");
         bst.preorder(bst.root);
         System.out.println("\n=== Post Order ===");
+        bst.postorder(bst.root);
 
     }
 }
