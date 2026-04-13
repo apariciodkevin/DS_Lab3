@@ -88,7 +88,26 @@ public class BST {
 
     }
 
-    public void delete (int key){
+    public Node delete (Node root, int key){
+        Node temp = this.root;
+        Node parent = null;
+        for (;;){
+            if (temp == null){
+                return null;
+            }
+            if (temp.key == key){
+                if (temp.left == null && temp.right == null){
+
+                }
+            }
+            if (temp.key > key){
+                parent = temp;
+                temp = temp.left;
+            } else {
+                parent = temp;
+                temp = temp.right;
+            }
+        }
 
     }
 }
